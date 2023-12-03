@@ -1,0 +1,126 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Poppins:wght@200;300;400;500;600;700&display=swap');
+
+body{
+    margin: 0;
+    background-color: #F6EFE2;
+    overflow-x: hidden;
+}
+header{
+    display: flex;
+    padding: 0px 30px;
+    box-shadow: -6px -10px 20px 0px black;
+    background-color:#1F4E41;
+}
+ul{
+    list-style: none;
+    display: flex;
+    column-gap: 56px;
+    align-items: center;
+    margin-left: auto;
+}
+li>a{
+    text-decoration: none;
+    color: #B29C59;
+    font-size: 16px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+}
+li>a:hover{
+    transition: .5s;
+    text-decoration: underline;
+    color: black;
+}
+#menu{
+    display: none;
+}
+header>h1{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 25px;
+}
+strong{
+    color: #B29C59;
+}
+.text{
+    font-family: 'Poppins', sans-serif;
+    max-width: 600px;
+}
+.text>h1{
+    font-size: 60px;
+    margin: 20px 0;
+    line-height: 60px;
+    color: black;
+}
+#especial{
+    font-weight: 800;
+    font-size: 25px;
+    margin-bottom: 0px;
+    color: #1F4E41;
+}
+#especial2{
+    margin-top: 0;
+    margin-bottom: 70px;
+    color: #1F4E41;
+}
+.text>a{
+    text-decoration: none;
+    color: #F6EFE2;
+    background-color: #1F4E41;
+    padding: 15px 40px;
+    border-radius: 10px;
+    font-weight: bold;
+    
+}
+.text>a:hover{
+    transition: 0.3s;
+    opacity: 0.9;
+}
+main{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+img{
+    margin-top: 70px;
+}
+@media(max-width:1448px){
+    main{
+        flex-direction: column;
+    }
+    img{
+        width: 500px;
+    }
+}
+@media(max-width:806px){
+    header>h1{
+        font-size: 20px;
+    }
+    ul{
+        display: none;
+    }
+    .text>h1{
+        font-size: 30px;
+        line-height: 40px;
+        margin: 25px 0;
+    }
+    #especial{
+        font-size: 20px;
+    }
+    #especial2{
+        margin-bottom: 70px;
+    }
+    .text{
+        text-align: center;
+    }
+    img{
+        width: 450px;
+    }
+    main{
+        margin-top: 40px;
+    }
+    #menu{
+        display: block;
+        margin-top: 10px;
+        margin-left: auto;
+        size: 90px;
+    }
+}
